@@ -1,0 +1,51 @@
+body {
+	height: 100vh;
+    margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: #212121;
+}
+
+button {
+    border: none;
+    padding: 12px 40px;
+    background-color: #c47135;
+    color: white;
+    font-family: 'BenchNine';
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -5px;
+    left: -5px;
+    border-top: 2px solid #c47135;
+    border-left: 2px solid #c47135;
+    transition: all 0.25s;
+}
+
+button:hover:before,
+button:hover:after {
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);   
+}
+
+button:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: -5px;
+    right: -5px;
+    border-bottom: 2px solid #c47135;
+    border-right: 2px solid #c47135;
+    transition: all 0.25s;
+}
