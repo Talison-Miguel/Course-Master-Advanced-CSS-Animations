@@ -6,7 +6,12 @@ div {
 	width: 150px;
 	height: 150px;
 	background-color: red;
-	animation: moving 3s both 3 ease-in alternate 1s;
+	animation-name: moving;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: alternate;
 }
 
 @keyframes moving {
