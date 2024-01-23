@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #292f3d;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: white;
+    position: relative;
+}
+
+h1:before {
+    content: 'Loading...';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fbb93b;
+    overflow: hidden;
+    border-right: 4px solid #fbb93b;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%{ width: 0%; }
+    50%{ width: 100%; }
+    100%{ width: 0%; }
+}
